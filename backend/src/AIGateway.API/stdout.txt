@@ -1,0 +1,258 @@
+Using launch settings from C:\Working_project\provider\backend\src\AIGateway.API\Properties\launchSettings.json...
+Building...
+C:\Working_project\provider\backend\src\AIGateway.Application\AIGateway.Application.csproj : warning NU1903: Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x [C:\Working_project\provider\backend\src\AIGateway.API\AIGateway.API.csproj]
+C:\Working_project\provider\backend\src\AIGateway.Application\AIGateway.Application.csproj : warning NU1903: Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+[13:18:45 ERR] An exception occurred while iterating over the results of a query for context type 'AIGateway.Persistence.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[13:18:45 ERR] An error occurred
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at AIGateway.Application.Providers.Queries.GetProvidersQueryHandler.Handle(GetProvidersQuery request, CancellationToken ct) in C:\Working_project\provider\backend\src\AIGateway.Application\Providers\Queries\GetProvidersQuery.cs:line 10
+   at AIGateway.API.Controllers.ProvidersController.GetAll() in C:\Working_project\provider\backend\src\AIGateway.API\Controllers\ProvidersController.cs:line 8
+   at lambda_method85(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AIGateway.API.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, IUnitOfWork uow) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ApiKeyMiddleware.cs:line 3
+   at AIGateway.API.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\RequestLoggingMiddleware.cs:line 2
+   at AIGateway.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ExceptionMiddleware.cs:line 3
+[13:18:45 ERR] HTTP GET /api/providers responded 500 in 362.9890 ms
+[13:18:45 ERR] An exception occurred while iterating over the results of a query for context type 'AIGateway.Persistence.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[13:18:45 ERR] An error occurred
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at AIGateway.Application.Providers.Queries.GetProvidersQueryHandler.Handle(GetProvidersQuery request, CancellationToken ct) in C:\Working_project\provider\backend\src\AIGateway.Application\Providers\Queries\GetProvidersQuery.cs:line 10
+   at AIGateway.API.Controllers.ProvidersController.GetAll() in C:\Working_project\provider\backend\src\AIGateway.API\Controllers\ProvidersController.cs:line 8
+   at lambda_method85(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AIGateway.API.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, IUnitOfWork uow) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ApiKeyMiddleware.cs:line 3
+   at AIGateway.API.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\RequestLoggingMiddleware.cs:line 2
+   at AIGateway.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ExceptionMiddleware.cs:line 3
+[13:18:45 ERR] HTTP GET /api/providers responded 500 in 166.0054 ms
+[13:18:57 INF] POST /api/auth/login responded 200 in 321ms
+[13:18:57 INF] HTTP POST /api/auth/login responded 200 in 322.5146 ms
+[13:19:02 INF] POST /api/auth/login responded 200 in 27ms
+[13:19:02 INF] HTTP POST /api/auth/login responded 200 in 28.0926 ms
+[13:19:03 INF] GET /api/usage/summary responded 200 in 158ms
+[13:19:03 INF] HTTP GET /api/usage/summary responded 200 in 158.6156 ms
+[13:19:03 ERR] An exception occurred while iterating over the results of a query for context type 'AIGateway.Persistence.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[13:19:03 ERR] An error occurred
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at AIGateway.Application.Providers.Queries.GetProvidersQueryHandler.Handle(GetProvidersQuery request, CancellationToken ct) in C:\Working_project\provider\backend\src\AIGateway.Application\Providers\Queries\GetProvidersQuery.cs:line 10
+   at AIGateway.API.Controllers.ProvidersController.GetAll() in C:\Working_project\provider\backend\src\AIGateway.API\Controllers\ProvidersController.cs:line 8
+   at lambda_method85(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AIGateway.API.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, IUnitOfWork uow) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ApiKeyMiddleware.cs:line 3
+   at AIGateway.API.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\RequestLoggingMiddleware.cs:line 2
+   at AIGateway.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ExceptionMiddleware.cs:line 3
+[13:19:03 ERR] HTTP GET /api/providers responded 500 in 26.1491 ms
+[13:19:03 INF] GET /api/models responded 200 in 94ms
+[13:19:03 INF] HTTP GET /api/models responded 200 in 94.9622 ms
+[13:19:03 INF] GET /api/usage/charts responded 200 in 40ms
+[13:19:03 INF] HTTP GET /api/usage/charts responded 200 in 40.9887 ms
+[13:19:03 INF] GET /api/analytics/overview responded 200 in 52ms
+[13:19:03 INF] HTTP GET /api/analytics/overview responded 200 in 52.6691 ms
+[13:19:08 INF] POST /api/auth/login responded 200 in 29ms
+[13:19:08 INF] HTTP POST /api/auth/login responded 200 in 31.3103 ms
+[13:19:08 ERR] An exception occurred while iterating over the results of a query for context type 'AIGateway.Persistence.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[13:19:08 ERR] An error occurred
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at AIGateway.Application.Providers.Queries.GetProvidersQueryHandler.Handle(GetProvidersQuery request, CancellationToken ct) in C:\Working_project\provider\backend\src\AIGateway.Application\Providers\Queries\GetProvidersQuery.cs:line 10
+   at AIGateway.API.Controllers.ProvidersController.GetAll() in C:\Working_project\provider\backend\src\AIGateway.API\Controllers\ProvidersController.cs:line 8
+   at lambda_method85(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AIGateway.API.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, IUnitOfWork uow) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ApiKeyMiddleware.cs:line 3
+   at AIGateway.API.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\RequestLoggingMiddleware.cs:line 2
+   at AIGateway.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ExceptionMiddleware.cs:line 3
+[13:19:08 ERR] HTTP GET /api/providers responded 500 in 18.1464 ms
+[13:19:14 INF] POST /api/auth/login responded 200 in 15ms
+[13:19:14 INF] HTTP POST /api/auth/login responded 200 in 15.6502 ms
+[13:19:14 ERR] An exception occurred while iterating over the results of a query for context type 'AIGateway.Persistence.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[13:19:14 ERR] An error occurred
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at AIGateway.Application.Providers.Queries.GetProvidersQueryHandler.Handle(GetProvidersQuery request, CancellationToken ct) in C:\Working_project\provider\backend\src\AIGateway.Application\Providers\Queries\GetProvidersQuery.cs:line 10
+   at AIGateway.API.Controllers.ProvidersController.GetAll() in C:\Working_project\provider\backend\src\AIGateway.API\Controllers\ProvidersController.cs:line 8
+   at lambda_method85(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AIGateway.API.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, IUnitOfWork uow) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ApiKeyMiddleware.cs:line 3
+   at AIGateway.API.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\RequestLoggingMiddleware.cs:line 2
+   at AIGateway.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ExceptionMiddleware.cs:line 3
+[13:19:14 ERR] HTTP GET /api/providers responded 500 in 14.3660 ms
+[13:19:18 INF] POST /api/auth/login responded 200 in 13ms
+[13:19:18 INF] HTTP POST /api/auth/login responded 200 in 14.4534 ms
+[13:19:18 ERR] An exception occurred while iterating over the results of a query for context type 'AIGateway.Persistence.Data.AppDbContext'.
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+[13:19:18 ERR] An error occurred
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method100(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at AIGateway.Application.Providers.Queries.GetProvidersQueryHandler.Handle(GetProvidersQuery request, CancellationToken ct) in C:\Working_project\provider\backend\src\AIGateway.Application\Providers\Queries\GetProvidersQuery.cs:line 10
+   at AIGateway.API.Controllers.ProvidersController.GetAll() in C:\Working_project\provider\backend\src\AIGateway.API\Controllers\ProvidersController.cs:line 8
+   at lambda_method85(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AIGateway.API.Middleware.ApiKeyMiddleware.InvokeAsync(HttpContext context, IUnitOfWork uow) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ApiKeyMiddleware.cs:line 3
+   at AIGateway.API.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\RequestLoggingMiddleware.cs:line 2
+   at AIGateway.API.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Working_project\provider\backend\src\AIGateway.API\Middleware\ExceptionMiddleware.cs:line 3
+[13:19:18 ERR] HTTP GET /api/providers responded 500 in 15.7552 ms
+[13:19:25 INF] GET / responded 404 in 0ms
+[13:19:25 INF] HTTP GET / responded 404 in 6.2411 ms

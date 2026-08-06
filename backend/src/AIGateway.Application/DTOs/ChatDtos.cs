@@ -1,0 +1,11 @@
+using System.Text.Json.Serialization;
+namespace AIGateway.Application.DTOs;
+public record ChatRequestDto(string Model, List<ChatMessageDto> Messages, bool Stream = false, ChatSettingsDto? Settings = null, List<ChatToolDto>? Tools = null, object? ToolChoice = null);
+public record ChatMessageDto(string Role, string Content, string? Name = null, [property: JsonPropertyName("tool_call_id")] string? ToolCallId = null, [property: JsonPropertyName("tool_calls")] List<ChatToolCallDto>? ToolCalls = null, [property: JsonPropertyName("reasoning_content")] string? ReasoningContent = null);
+public record ChatSettingsDto(double? Temperature = null, double? TopP = null, double? FrequencyPenalty = null, double? PresencePenalty = null, int? MaxTokens = null, string? StopSequence = null, bool? JsonMode = null, bool? EnableThinking = null);
+public record ChatToolDto(string Type = "function", ChatToolFunctionDto? Function = null);
+public record ChatToolFunctionDto(string Name = "", string? Description = null, object? Parameters = null);
+public record ChatToolCallDto(string Id, string Type = "function", ChatToolCallFunctionDto? Function = null);
+public record ChatToolCallFunctionDto(string Name = "", string? Arguments = null);
+public record ChatStreamToolCall(int Index, string? Id = null, string? Name = null, string? Arguments = null);
+public record ChatResponseDto(string Model, string Content, long PromptTokens, long CompletionTokens, long TotalTokens);

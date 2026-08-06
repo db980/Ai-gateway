@@ -1,0 +1,6 @@
+@AIGateway.API_HostAddress = http://localhost:5144
+
+GET {{AIGateway.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

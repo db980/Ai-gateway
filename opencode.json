@@ -1,0 +1,35 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "nexgateway/llama-3.3-70b-versatile",
+  "instructions": ["ai-context/Core/prd.md"],
+  "provider": {
+    "nexgateway": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ai Gateway",
+      "options": {
+        "baseURL": "http://localhost:5005/gateway",
+        "apiKey": "sk_live_3ca71edb7de20114e2203d96d88cc9a44720b51be49885fe7bdc02408f365639"
+      },
+      "models": {
+        "groq/compound-mini": {
+          "name": "Groq Compound Mini"
+        },
+        "openai/gpt-oss-120b": {
+          "name": "GPT-OSS 120B"
+        },
+        "openai/gpt-oss-20b": {
+          "name": "GPT-OSS 20B"
+        },
+        "qwen/qwen3.6-27b": {
+          "name": "Qwen 3.6 27B"
+        },
+        "llama-3.3-70b-versatile": {
+          "name": "Llama 3.3 70B"
+        },
+        "llama-3.1-8b-instant": {
+          "name": "Llama 3.1 8B Instant"
+        }
+      }
+    }
+  }
+}

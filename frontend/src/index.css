@@ -1,0 +1,6 @@
+/* Minimal reset - MUI handles most styling */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Roboto', sans-serif; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }

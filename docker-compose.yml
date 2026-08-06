@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: "Admin@123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    networks:
+      - aigateway-net
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - aigateway-net
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=AIGateway;User Id=sa;Password=Admin@123;TrustServerCertificate=True;
+      - ConnectionStrings__Redis=redis:6379
+      - Jwt__Key=AIGatewaySuperSecretKeyForJwtTokenGeneration2024!
+      - Jwt__Issuer=AIGateway
+      - Jwt__Audience=AIGatewayClient
+    depends_on:
+      - sqlserver
+      - redis
+    networks:
+      - aigateway-net
+
+  react:
+    build:
+      context: .
+      dockerfile: Dockerfile.react
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    networks:
+      - aigateway-net
+
+volumes:
+  sqlserver-data:
+
+networks:
+  aigateway-net:
+    driver: bridge

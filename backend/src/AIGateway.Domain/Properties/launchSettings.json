@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "AIGateway.API": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Working_project\\provider\\backend\\src\\AIGateway.API"
+    },
+    "Profile 1": {
+      "commandName": "Project"
+    }
+  }
+}
