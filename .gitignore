@@ -1,0 +1,30 @@
+# React
+node_modules/
+dist/
+build/
+.vite/
+.env
+.env.*
+coverage/
+
+# .NET
+[Bb]in/
+[Oo]bj/
+.vs/
+publish/
+TestResults/
+*.trx
+
+# Visual Studio
+*.user
+*.suo
+*.cache
+*.pdb
+
+# VS Code / Rider
+.vscode/
+.idea/
+
+# Logs
+*.log
+
